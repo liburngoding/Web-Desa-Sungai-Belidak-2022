@@ -8,10 +8,13 @@
 </p>
 
 ## About Laravel
-How to migrate : 
+How to migrate and run : 
+- fill .env file to your database settings
 - delete $categories = Category::all(); in routes/web.php
 - delete ['categories' => $categories] in routes/web.php
 - enter command "php artisan migrate:fresh --seed"
+- undo categories text from routes/web.php
+- run with "php artisan serve"
 
 
 ## About Laravel
