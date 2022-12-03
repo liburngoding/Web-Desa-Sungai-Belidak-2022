@@ -153,14 +153,14 @@ return [
         ],
 
         'slack' => [
-            'webhook_url' => 'https://hooks.slack.com/services/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',
+            'webhook_url' => '',
 
             /*
              * If this is set to null the default channel of the webhook will be used.
              */
-            'channel' => 'desa-sungai-belidak',
+            'channel' => '',
 
-            'username' => 'Ruan Lingyu',
+            'username' => '',
 
             'icon' => null,
 
