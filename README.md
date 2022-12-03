@@ -7,7 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## About Project
 How to migrate and run this : 
 - fill .env file to your database settings
 - delete $categories = Category::all(); in routes/web.php
