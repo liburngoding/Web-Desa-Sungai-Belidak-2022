@@ -12,11 +12,11 @@ This project all database table name are in english, but front-end is in indones
 <br>
 How to migrate and run this : 
 - fill .env file with your database settings
-- delete in routes/web.php
+- delete this in routes/web.php
 ```php
 $categories = Category::all();
 ```
-- delete in routes/web.php
+- delete this in routes/web.php
 ```php
 ['categories' => $categories]
 ```
