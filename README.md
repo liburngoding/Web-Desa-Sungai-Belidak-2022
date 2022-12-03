@@ -8,7 +8,7 @@
 </p>
 
 ## About Laravel
-How to migrate and run : 
+How to migrate and run this : 
 - fill .env file to your database settings
 - delete $categories = Category::all(); in routes/web.php
 - delete ['categories' => $categories] in routes/web.php
