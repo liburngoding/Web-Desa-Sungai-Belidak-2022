@@ -9,7 +9,7 @@
 
 ## About Project
 How to migrate and run this : 
-- fill .env file to your database settings
+- fill .env file with your database settings
 - delete $categories = Category::all(); in routes/web.php
 - delete ['categories' => $categories] in routes/web.php
 - enter command "php artisan migrate:fresh --seed"
