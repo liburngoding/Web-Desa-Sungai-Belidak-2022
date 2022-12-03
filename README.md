@@ -8,6 +8,13 @@
 </p>
 
 ## About Laravel
+How to migrate : 
+- delete $categories = Category::all(); in routes/web.php
+- delete ['categories' => $categories] in routes/web.php
+- enter command "php artisan migrate:fresh --seed"
+
+
+## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
