@@ -16,8 +16,10 @@ How to migrate and run this :
 - delete ['categories' => $categories] in routes/web.php
 - enter command "php artisan migrate:fresh --seed"
 - undo categories text from routes/web.php
-- run with "php artisan serve"
-
+- run with 
+    ```sh
+    php artisan serve
+    ```
 
 ## About Laravel
 
