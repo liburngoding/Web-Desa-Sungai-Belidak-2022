@@ -12,10 +12,20 @@ This project all database table name are in english, but front-end is in indones
 <br>
 How to migrate and run this : 
 - fill .env file with your database settings
-- delete $categories = Category::all(); in routes/web.php
-- delete ['categories' => $categories] in routes/web.php
-- enter command "php artisan migrate:fresh --seed"
-- undo categories text from routes/web.php
+- delete in routes/web.php
+```php
+$categories = Category::all();
+```
+- delete in routes/web.php
+```php
+['categories' => $categories]
+```
+- save file
+- enter command
+    ```sh
+    php artisan migrate:fresh --seed
+    ```
+- undo text from routes/web.php, so that categories syntax will come back
 - run with 
     ```sh
     php artisan serve
