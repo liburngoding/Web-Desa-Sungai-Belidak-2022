@@ -1,7 +1,6 @@
 <?php
 
 use App\Models\Category;
-
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LoginController;
@@ -44,14 +43,12 @@ Route::middleware(['throttle:pembatasPengunjung'])->group(function () {
         Route::get('/posts', [PostController::class, 'index']);
         Route::get('posts/{post:slug}', [PostController::class, 'show']);
         //? kalu cuma {post} berarti id nya, tapi kalau post:slug, berarti slug dari postnya
-
     });
     Route::controller(LoginController::class)->group(function () {
         Route::get('/login', 'index')->name('login')->middleware('guest');
         Route::post('/login', 'authenticate')->middleware('guest');
         Route::post('/logout', 'logout')->middleware('auth');
     });
-
     //! auth (semua yang ada dibawah ini harus login)
     Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function () {
         Route::get('/', [DashboardController::class, 'index']);
